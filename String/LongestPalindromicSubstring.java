@@ -19,8 +19,8 @@ public class LongestPalindromicSubstring {
             for(int j= i+1; j<n; j++){
                 String sub=s.substring(i,j);
                 if(checkPalindrome(sub)){
-                    if(maxPalindromicSubstring.length()< str.length()){
-                        maxPalindromicSubstring= new StringBuilder(str);
+                    if(maxPalindromicSubstring.length()< sub.length()){
+                        maxPalindromicSubstring= new StringBuilder(sub);
                     }
                 }
             }
